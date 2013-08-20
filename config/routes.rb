@@ -1,4 +1,6 @@
 Intro::Application.routes.draw do
+  get "math/sqrt"
+  get "math/modulo"
   get "hello/from_view"
   get "hello/from_controller"
   get "welcome/index"
