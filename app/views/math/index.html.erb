@@ -1,0 +1,48 @@
+<h1>Simple math operations</h1>
+	<h2>Addition!</h2>
+	<%= form_tag do %>
+	<%= text_field_tag :sum_one, 0 %>
+	+
+	<%= text_field_tag :sum_two, 0 %>
+	<%= submit_tag "=" %>
+	<%= @sum_result %>
+<% end %>
+  <h2>Subtraction!</h2>
+	<%= form_tag do %>
+	<%= text_field_tag :sub_one, 0 %>
+	-
+	<%= text_field_tag :sub_two, 0 %>
+	<%= submit_tag "=" %>
+	<%= @sub_result %>
+<% end %>
+<h2>Multiplication!</h2>
+	<%= form_tag do %>
+	<%= text_field_tag :mult_one, 0 %>
+	*
+	<%= text_field_tag :mult_two, 0 %>
+	<%= submit_tag "=" %>
+	<%= @mult_result %>
+	<% end %>
+<h2>Division!</h2>
+	<%= form_tag do %>
+	<%= text_field_tag :div_one, 0 %>
+	/
+	<%= text_field_tag :div_two, 0 %>
+	<%= submit_tag "=" %>
+	<%= @div_result %>
+<% end %>
+<h2>Square Root!</h2>
+	<%= form_tag do %>
+	&radic;
+	<%= text_field_tag :sqrt, 0 %>
+	<%= submit_tag "=" %>
+	<%= @sqrt_result %>
+<% end %>
+<h2>Exponation!</h2>
+	<%= form_tag do %>
+	<%= text_field_tag :exp_one, 0 %>
+  &circ;
+	<%= text_field_tag :exp_two, 0 %>
+	<%= submit_tag "=" %>
+	<%= @exp_result %>
+<% end %>

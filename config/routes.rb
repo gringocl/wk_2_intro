@@ -1,4 +1,5 @@
 Intro::Application.routes.draw do
+  get "math/index"
   get "pages/lightningtalks"
   get "hello/from_view"
   get "hello/from_controller"
@@ -10,6 +11,7 @@ Intro::Application.routes.draw do
   root 'welcome#index'
 
   get '/lightningtalks', :to => 'pages#lightningtalks'
+  post '/math/index', :to => 'math#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
