@@ -1,6 +1,5 @@
 Intro::Application.routes.draw do
-  get "math/sqrt"
-  get "math/modulo"
+  get "pages/lightningtalks"
   get "hello/from_view"
   get "hello/from_controller"
   get "welcome/index"
@@ -9,6 +8,8 @@ Intro::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+
+  get '/lightningtalks', :to => 'pages#lightningtalks'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

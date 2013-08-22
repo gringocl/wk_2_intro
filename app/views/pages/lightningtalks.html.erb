@@ -1,0 +1,57 @@
+<h1>Today is <%= @date %><h1>
+<h1>CodeFellows Lightning Talk Git Autocomplete and Bash Customization</h1>
+
+<p>This repo has my customized .bashrc and git-prompt.sh files</p>
+
+<h2>.bashrc</h2>
+
+<p>I used a few resources for coming up with this</p>
+
+<ol>
+<li><a href="https://gist.github.com/ricardobeat/5980892">Base code and idea</a></li>
+<li><a href="http://ithaca.arpinum.org/2013/01/02/git-prompt.html">Title Bar addition and understanding git-prompt</a></li>
+<li><a href="http://blog.taylormcgann.com/tag/prompt-color/">Prompt Escapes</a></li>
+<li><a href="http://misc.flogisoft.com/bash/tip_colors_and_formatting">Color Guide</a></li>
+</ol>
+
+<p><img src="https://github.com/gringocl/photos/blob/master/2.png?raw=true" alt="First attempt at it" title="" /></p>
+
+<h2>git-prompt and autocomplete</h2>
+
+<p>Homebrew installs this file along with the autocomplete file in /usr/local/etc/bash_completion.d/</p>
+
+<p>I changed the colors so it didn't look like Christmas and took out some color escapes so it worked correctly with background colors.</p>
+
+<p><img src="https://github.com/gringocl/photos/blob/master/3.png?raw=true" alt="Autocomplete Picture" title="" /></p>
+
+<h3>git-prompt legend</h3>
+
+<p>Here is what I believe the symbols mean, some are in the comments of the actual file and others are not.</p>
+
+<ol>
+<li>(*)   unstaged</li>
+<li>(+)   staged</li>
+<li>($)   stashed</li>
+<li>(%)   untracked files</li>
+<li>(&lt;)   behind head</li>
+<li>(>)   ahead head</li>
+<li>(&lt;>)  diverged head</li>
+<li>(=)   no difference</li>
+<li>(+/-) num. of commits behind or ahead</li>
+<li>(u)   upstream</li>
+<li>(#)   local</li>
+</ol>
+
+<%#<%= link_to image_tag('1.png', alt: "Git and the prompt"), 'app/assets/images/1.png' %> %>
+
+<%= image_tag "1.png" %>
+
+<%# <p><img src="https://github.com/gringocl/photos/blob/master/1.png?raw=true" alt="" title="" /></p> %>
+
+<h2>.bashrc and git-prompt mega rabbit hole</h2>
+
+<p>So, my <a href="https://gist.github.com/ricardobeat/5980892">base code example</a> really screwed me up because it shows some really nice font symbols. If you follow the link and look at <a href="https://github.com/Lokaltog/powerline">powerline</a> I tried and customizing what I already had with those symbols.  The .bashrc-fonts is my latest customization using those symbols.</p>
+
+<p>Below is the finalish result</p>
+
+<p><img src="https://github.com/gringocl/photos/blob/master/4.png?raw=true" alt="finalish" title="" /></p>
